@@ -1,0 +1,21 @@
+div {
+  /* border: 1px solid grey;
+  padding: 2px; */
+}
+
+.rating-stars {
+  color: rgb(244, 187, 64);
+}
+
+.product-item {
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.footer-items {
+  color: #ccc;
+}
+.footer-items ul {
+  list-style: square;
+}
