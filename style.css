@@ -16,6 +16,16 @@ div {
 .footer-items {
   color: #ccc;
 }
+
 .footer-items ul {
   list-style: square;
+}
+
+.breadcrumb {
+  background-color: #eee;
+}
+
+.product-small {
+  max-width: 10rem;
+  padding: 1rem;
 }
