@@ -59,3 +59,7 @@ div {
 .success-icon {
   font-size: 10rem;
 }
+
+.carouselExampleDark img {
+  max-height: 80vh;
+}

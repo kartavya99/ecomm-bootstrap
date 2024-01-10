@@ -10,8 +10,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -19,50 +23,171 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-body-tertiary mb-5">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">E-Shop</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My Account</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categories
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Camera</a></li>
-                  <li><a class="dropdown-item" href="#">Apple Gadgets</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Drones</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Carts</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">E-Shop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >My Account</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Camera</a></li>
+                <li><a class="dropdown-item" href="#">Apple Gadgets</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Drones</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Carts</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Search for all product"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End of nav -->
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide mb-5"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            src="./images/product-2-slider.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
-      </nav>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="./images/product-3-slider.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="./images/product-6-slider.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- End of Carousel -->
     <div class="container mb-5">
       <div class="row">
         <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="card product-item" >
+          <div class="card product-item">
             <img
               src="./images/product-1-square.jpg"
               class="card-img-top"
               alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Click for more product detail"
             />
             <div class="card-body">
               <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
@@ -73,174 +198,251 @@
                   ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
                   ><i class="bi bi-star-fill"></i
                 ></span>
-                
               </p>
               <div class="text-center">
-                <a class="btn btn-primary" href="#" role="button"> Add to Cart</a>
-                
-            </div>
+                <a class="btn btn-primary" onclick="showToast()" role="button">
+                  Add to Cart</a
+                >
+              </div>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="card product-item">
-              <img
-                src="images/product-2-square.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
-                <h5 class="card-title">Sony wx-5</h5>
-                <p class="card-text">
-                  $100.75
-                  <span class="float-end rating-stars"
-                    ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>                
-                </p>
-                <div class="text-center">
-                    <a class="btn btn-primary" href="#" role="button"> Add to Cart</a>                    
-                </div>                
+          <div class="card product-item">
+            <img
+              src="images/product-2-square.jpg"
+              class="card-img-top"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Click for more product detail"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
+              <h5 class="card-title">Sony wx-5</h5>
+              <p class="card-text">
+                $100.75
+                <span class="float-end rating-stars"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </p>
+              <div class="text-center">
+                <a class="btn btn-primary" onclick="showToast()" role="button">
+                  Add to Cart</a
+                >
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="card product-item">
-              <img
-                src="./images/product-3-square.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
-                <h5 class="card-title">Sony wx-5</h5>
-                <p class="card-text">
-                  $100.75
-                  <span class="float-end rating-stars"
-                    ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>                  
-                </p>
-                <div class="text-center">
-                    <a class="btn btn-primary" href="#" role="button"> Add to Cart</a>                    
-                </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="card product-item">
+            <img
+              src="./images/product-3-square.jpg"
+              class="card-img-top"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Click for more product detail"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
+              <h5 class="card-title">Sony wx-5</h5>
+              <p class="card-text">
+                $100.75
+                <span class="float-end rating-stars"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </p>
+              <div class="text-center">
+                <a class="btn btn-primary" onclick="showToast()" role="button">
+                  Add to Cart</a
+                >
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="card product-item">
-              <img
-                src="./images/product-4-square.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
-                <h5 class="card-title">Sony wx-5</h5>
-                <p class="card-text">
-                  $100.75
-                  <span class="float-end rating-stars"
-                    ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </p>
-                <div class="text-center">
-                    <a class="btn btn-primary" href="#" role="button"> Add to Cart</a>
-                    
-                </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="card product-item">
+            <img
+              src="./images/product-4-square.jpg"
+              class="card-img-top"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Click for more product detail"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
+              <h5 class="card-title">Sony wx-5</h5>
+              <p class="card-text">
+                $100.75
+                <span class="float-end rating-stars"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </p>
+              <div class="text-center">
+                <a class="btn btn-primary" onclick="showToast()" role="button">
+                  Add to Cart</a
+                >
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="card product-item">
-              <img
-                src="./images/product-5-square.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
-                <h5 class="card-title">Sony wx-5</h5>
-                <p class="card-text">
-                  $100.75
-                  <span class="float-end rating-stars"
-                    ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </p>
-                <div class="text-center">
-                    <a class="btn btn-primary" href="#" role="button"> Add to Cart</a>
-                    
-                </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="card product-item">
+            <img
+              src="./images/product-5-square.jpg"
+              class="card-img-top"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Click for more product detail"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
+              <h5 class="card-title">Sony wx-5</h5>
+              <p class="card-text">
+                $100.75
+                <span class="float-end rating-stars"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="#" role="button">
+                  Add to Cart</a
+                >
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="card product-item">
-              <img
-                src="./images/product-6-square.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
-                <h5 class="card-title">Sony wx-5</h5>
-                <p class="card-text">
-                  $100.75
-                  <span class="float-end rating-stars"
-                    ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                </p>
-                <div class="text-center">
-                    <a class="btn btn-primary" href="#" role="button"> Add to Cart</a>
-                    
-                </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="card product-item">
+            <img
+              src="./images/product-6-square.jpg"
+              class="card-img-top"
+              alt="..."
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Click for more product detail"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Camera</h6>
+              <h5 class="card-title">Sony wx-5</h5>
+              <p class="card-text">
+                $100.75
+                <span class="float-end rating-stars"
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+              </p>
+              <div class="text-center">
+                <a class="btn btn-primary" onclick="showToast()" role="button">
+                  Add to Cart</a
+                >
               </div>
             </div>
           </div>
-
-        
-          
         </div>
       </div>
     </div>
-    <div class="footer mt-auto bg-dark text-light">
-        <div class="container py-3">
-            <div class="row d-flex footer-items">
-                <div class="col">
-                    <h5>Categories</h5>
-                    <ul>
-                        <li>Watches</li>
-                        <li>Mobiles</li>
-                        <li>Tablets</li>
-                        <li>Audio</li>
-                        <li>Drones</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h5>Useful Links</h5>
-                    <ul>
-                        <li>Terms</li>
-                        <li>Privacy</li>
-                        <li>About us</li>
-                        <li>Mission</li>                
-                    </ul>
-                </div>
-                <div class="col">
-                    <h5>Get Updates</h5>
-                    <div class="d-flex">
-                        <input type="text" class="form-control">
-                        <button class="btn btn-primary">Subscribe</button>
-                    </div>
-                </div>
-        
-            </div>
-        </div>
-            
-    </div>
-        
 
+    <!-- End of Product -->
+    <div class="footer mt-auto bg-dark text-light">
+      <div class="container py-3">
+        <div class="row d-flex footer-items">
+          <div class="col">
+            <h5>Categories</h5>
+            <ul>
+              <li>Watches</li>
+              <li>Mobiles</li>
+              <li>Tablets</li>
+              <li>Audio</li>
+              <li>Drones</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Useful Links</h5>
+            <ul>
+              <li>Terms</li>
+              <li>Privacy</li>
+              <li>About us</li>
+              <li>Mission</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Get Updates</h5>
+            <div class="d-flex">
+              <input type="text" class="form-control" />
+              <button class="btn btn-primary">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Footer -->
+
+    <div
+      class="toast align-items-center text-white bg-primary border-0"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="d-flex bg-primary position-fixed top-0">
+        <div class="toast-body">Item is successfully added to your cart.</div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <!-- End of Taost -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            You will need to Login to Check your account
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a type="button" href="login.html" class="btn btn-primary"
+              >Go To Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal -->
+
+    <script src="./app.js"></script>
   </body>
 </html>
