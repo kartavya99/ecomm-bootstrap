@@ -1,3 +1,7 @@
+body {
+  min-height: 100vh;
+}
+
 div {
   /* border: 1px solid grey;
   padding: 2px; */
@@ -44,4 +48,10 @@ div {
 
 .close i:hover {
   color: red;
+}
+
+.login-box {
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 2rem;
 }
