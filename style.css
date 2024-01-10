@@ -25,7 +25,23 @@ div {
   background-color: #eee;
 }
 
-.product-small {
-  max-width: 10rem;
+.product-small img {
+  max-width: 8rem;
   padding: 1rem;
+}
+
+.cart-item {
+  border: 1px solid rgb(75, 71, 71);
+}
+
+.order {
+  border: 1px solid rgb(75, 71, 71);
+}
+
+.close i {
+  font-size: 2rem;
+}
+
+.close i:hover {
+  color: red;
 }
