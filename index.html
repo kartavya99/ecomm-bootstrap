@@ -25,7 +25,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">E-Shop</a>
+        <a class="navbar-brand" href="/">E-Shop</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,9 +39,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -62,14 +62,21 @@
                 Categories
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Camera</a></li>
-                <li><a class="dropdown-item" href="#">Apple Gadgets</a></li>
+                <li><a class="dropdown-item" href="/#products">Camera</a></li>
+                <li>
+                  <a class="dropdown-item" href="/#products">Apple Gadgets</a>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Drones</a></li>
+                <li><a class="dropdown-item" href="/#products">Drones</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Carts</a>
+              <a class="nav-link" href="/cart.html">
+                <i class="bi bi-cart-plus"></i>Carts<span
+                  class="badge bg-success"
+                  >4</span
+                ></a
+              >
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -94,6 +101,7 @@
     </nav>
 
     <!-- End of nav -->
+
     <div
       id="carouselExampleDark"
       class="carousel carousel-dark slide mb-5"
@@ -177,12 +185,14 @@
     </div>
 
     <!-- End of Carousel -->
+
     <div class="container mb-5">
-      <div class="row">
+      <div id="products" class="row">
         <div class="col-xl-3 col-lg-4 col-sm-6">
           <div class="card product-item">
             <img
               src="./images/product-1-square.jpg"
+              onclick="goToProductDetails()"
               class="card-img-top"
               alt="..."
               data-bs-toggle="tooltip"
@@ -211,6 +221,7 @@
           <div class="card product-item">
             <img
               src="images/product-2-square.jpg"
+              onclick="goToProductDetails()"
               class="card-img-top"
               alt="..."
               data-bs-toggle="tooltip"
@@ -239,6 +250,7 @@
           <div class="card product-item">
             <img
               src="./images/product-3-square.jpg"
+              onclick="goToProductDetails()"
               class="card-img-top"
               alt="..."
               data-bs-toggle="tooltip"
@@ -267,6 +279,7 @@
           <div class="card product-item">
             <img
               src="./images/product-4-square.jpg"
+              onclick="goToProductDetails()"
               class="card-img-top"
               alt="..."
               data-bs-toggle="tooltip"
@@ -295,6 +308,7 @@
           <div class="card product-item">
             <img
               src="./images/product-5-square.jpg"
+              onclick="goToProductDetails()"
               class="card-img-top"
               alt="..."
               data-bs-toggle="tooltip"
@@ -323,6 +337,7 @@
           <div class="card product-item">
             <img
               src="./images/product-6-square.jpg"
+              onclick="goToProductDetails()"
               class="card-img-top"
               alt="..."
               data-bs-toggle="tooltip"
@@ -351,6 +366,7 @@
     </div>
 
     <!-- End of Product -->
+
     <div class="footer mt-auto bg-dark text-light">
       <div class="container py-3">
         <div class="row d-flex footer-items">
@@ -404,7 +420,6 @@
     </div>
     <!-- End of Taost -->
 
-    <!-- Modal -->
     <div
       class="modal fade"
       id="exampleModal"

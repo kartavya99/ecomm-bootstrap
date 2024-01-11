@@ -15,6 +15,7 @@ div {
   max-width: 300px;
   margin: auto;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .footer-items {
@@ -62,4 +63,9 @@ div {
 
 .carouselExampleDark img {
   max-height: 80vh;
+}
+
+a.logo {
+  text-decoration: none;
+  color: black;
 }
