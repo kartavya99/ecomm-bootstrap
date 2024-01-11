@@ -28,31 +28,55 @@
         <a href="/" class="logo"><h1>e-Shopper</h1></a>
       </div>
       <div class="d-flex justify-content-center">
-        <div class="login-box m-auto mt-5 col-4 text-center">
+        <div class="login-box m-auto mt-5 col-4">
           <h3 class="text-center">Sign Up</h3>
-          <form>
-            <input
-              type="text"
-              class="form-control m-2"
-              placeholder="Full Name"
-            />
-            <input type="email" class="form-control m-2" placeholder="Email" />
-            <input
-              type="password"
-              class="form-control m-2"
-              placeholder="Password"
-            />
-            <input
-              type="password"
-              class="form-control m-2"
-              placeholder="confirm password"
-            />
+          <form class="needs-validation" novalidate="">
+            <div>
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Name"
+                value=""
+                required=""
+                fdprocessedid="onau9"
+              />
+              <div class="invalid-feedback">Valid email is required.</div>
+            </div>
+            <div>
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+                value=""
+                required=""
+                fdprocessedid="onau9"
+              />
+              <div class="invalid-feedback">Valid email is required.</div>
+            </div>
+
+            <div>
+              <label for="password" class="form-label">password</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                required=""
+                minlength="6"
+              />
+              <div class="invalid-feedback">Valid password is required.</div>
+            </div>
+
             <input
               type="submit"
               class="form-control m-2 btn-success"
               value="Create Account"
             />
           </form>
+
           <a href="/login.html">Have an account? Login Here</a>
         </div>
       </div>
@@ -91,4 +115,5 @@
       </div>
     </div>
   </body>
+  <script src="app.js"></script>
 </html>
