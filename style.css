@@ -1,5 +1,7 @@
 body {
   min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 div {
@@ -68,4 +70,39 @@ div {
 a.logo {
   text-decoration: none;
   color: black;
+}
+
+.color-label {
+  border-radius: 50% !important;
+  margin: 5px;
+}
+.color-label i {
+  opacity: 0;
+}
+
+.btn-check:checked + .color-label i {
+  opacity: 1;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.accordion-body {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.accordion-button {
+  padding: 5px;
+  background-color: #ccc;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: black;
+  color: white;
+}
+
+breadcrumb-item a {
+  text-decoration: none;
 }
